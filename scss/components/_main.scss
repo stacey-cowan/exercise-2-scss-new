@@ -1,0 +1,25 @@
+/* This is our main file for css/sass */
+
+body {
+    background-color: $background;
+    font-family:sans-serif;
+}
+
+.primary-btn {
+    @include button($primary, #fff, $primarydark);
+}
+
+.secondary-btn {
+    @include button($secondary, #000, $secondarydark);
+}
+
+.border {
+    border: 1px solid $secondarydark;
+    p {
+        color: green;
+    }
+}
+
+ul {
+    @extend .border;
+}
